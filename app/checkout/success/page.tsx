@@ -66,12 +66,20 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
         </dl>
       </section>
 
-      <Link
-        href="/"
-        className="inline-block rounded-lg bg-indigo-600 px-6 py-3 font-semibold text-white hover:bg-indigo-700"
-      >
-        Retour à l&apos;accueil
-      </Link>
+      <div className="flex gap-4">
+        <Link
+          href="/cart"
+          className="inline-block rounded-lg border border-indigo-600 px-6 py-3 font-semibold text-indigo-600 hover:bg-indigo-50"
+        >
+          Retour au panier
+        </Link>
+        <Link
+          href="/"
+          className="inline-block rounded-lg bg-indigo-600 px-6 py-3 font-semibold text-white hover:bg-indigo-700"
+        >
+          Retour à l&apos;accueil
+        </Link>
+      </div>
     </main>
   );
 }
